@@ -24,12 +24,12 @@ DROP TABLE IF EXISTS `users`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `users` (
   `idusers` int NOT NULL AUTO_INCREMENT,
-  `firstname` varchar(45) NOT NULL,
-  `lastname` varchar(45) NOT NULL,
-  `username` varchar(45) NOT NULL,
-  `password` varchar(45) NOT NULL,
-  `location` varchar(45) NOT NULL,
-  `gender` varchar(45) NOT NULL,
+  `имя` varchar(45) NOT NULL,
+  `фамилия` varchar(45) NOT NULL,
+  `ник` varchar(45) NOT NULL,
+  `пароль` varchar(45) NOT NULL,
+  `расположение` varchar(45) NOT NULL,
+  `пол` varchar(45) NOT NULL,
   PRIMARY KEY (`idusers`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
