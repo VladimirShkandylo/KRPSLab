@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timetable xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance">
+    <schedule>
+        <weekday>Понедельник</weekday> 
+        <subject>Методы и алгоритмы искусственного интеллекта</subject>
+        <group>ПИ-1-19-1</group>
+        <type>Лабораторная работа</type>
+		<classroom>Д-523</classroom>
+		<teacher>Аршинский Л.В.</teacher>
+		<starttime>12:10</starttime>
+		<endtime>13:40</endtime>
+    </schedule>
+    
+    <schedule>
+        <weekday>Понедельник</weekday> 
+        <subject>Базы данных</subject>
+        <group>ПИ-1-19-1</group>
+        <type>Лабораторная работа</type>
+		<classroom>Д-523</classroom>
+		<teacher>Кармадонов В.Ю.</teacher>
+		<starttime>13:50</starttime>
+		<endtime>15:20</endtime>
+    </schedule>
+
+    
+</timetable>

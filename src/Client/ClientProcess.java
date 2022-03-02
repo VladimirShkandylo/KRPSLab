@@ -45,7 +45,8 @@ public class ClientProcess {
         }
         catch (IOException ex){
             //Прерываем сессию
-            ClientProcess.this.downService();
+            downService();
+            System.exit(1);
         }
 
         new ReadMsg().start();
@@ -55,12 +56,13 @@ public class ClientProcess {
 
     private void downService() {
         try {
-            if (!socket.isClosed()) {
                 socket.close();
                 in.close();
                 out.close();
-            }
-        } catch (IOException ignored) {}
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 
     private class ReadMsg extends Thread {
@@ -70,7 +72,7 @@ public class ClientProcess {
             while (true) {
                 try {
                     String str = in.readLine();
-                    System.out.println("server : " + str);
+                    System.out.println(str);
                 } catch (IOException ex) {
                     //Прерываем сессию
                     ClientProcess.this.downService();
